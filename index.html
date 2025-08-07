@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahevag meniya's portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="mainPage">
+      <nav>
+        <h1>Sahevag meniya</h1>
+        <div>
+          <a id="home">Home</a>
+          <a id="about">About</a>
+          <a id="work">Work</a>
+          <a id="skills">Skills</a>
+        </div>
+      </nav>
+      <div id="content">
+        <!-- This is homepage on website first show this page -->
+        <div class="flex" id="homePage">
+          <div id="intro">
+            <h3 class="introAnimation">Hello,I'm Sahevag,</h3>
+            <h2 class="introAnimation">WEB</h2>
+            <h2 class="introAnimation">DEVELOPER</h2>
+            <h3 class="introAnimation">From Sanand, Ahmedabad</h3>
+            <button>Get Resume</button>
+            <div id="contact">
+              <h5>Contact me</h5>
+              <a id="email">sdmeniya@gmail.com</a>
+              <p>9574523028 (Call)</p>
+              <p>9510575004 (Call or Whatsapp)</p>
+            </div>
+          </div>
+          <div id="imgcontainer">
+            <img
+              src="/Images/myimg.jpg"
+              alt="profile picture of sahevag meniya"
+            />
+          </div>
+        </div>
+        <!-- This aboutPage is hidden when about is clicked homepage will hidden and this page will show on website -->
+        <div class="hidden" id="aboutPage">
+          <h2>About</h2>
+          <div id="aboutData">
+            <p>
+              Hello! I'm a passionate and curious individual with a background
+              in science and a growing interest in technology and design. I
+              completed my <span>Bachelor of Science</span> in June 2022 from
+              Sardar Patel University, achieving a CGPA of 6.59.
+            </p>
+            <p>
+              Currently, I am pursuing my
+              <span>Master of Computer Applications (MCA)</span> at
+              Surendranagar University.
+            </p>
+            <p>
+              My academic journey began at Shree Swaminarayan High School, where
+              I completed my SSC in 2017 with 68% and my HSC in 2019 with 56%.
+            </p>
+            <p>
+              Through these years, I've developed a solid foundation in
+              analytical thinking and problem-solving, and I'm constantly
+              exploring new tools and technologies to enhance my skills. I'm
+              enthusiastic about learning, building creative projects, and
+              growing in the field of web development.
+            </p>
+          </div>
+        </div>
+        <!-- This page is hidden when work is click this page is visible on website -->
+        <div class="hidden" id="workPage">
+          <h2>Work Experience</h2>
+          <div id="workData">
+            <div id="Curis">
+              <h3>QC Chemist</h3>
+              <p><strong>Jan 2023 – Mar 2024</strong> | Sanand</p>
+              <p><strong>Company:</strong> Curis Lifesciences Pvt. Ltd.</p>
+            </div>
+
+            <div id="k2">
+              <h3>Data Entry Operator</h3>
+              <p><strong>May 2024 – Jul 2025</strong> | Sanand</p>
+              <p><strong>Company:</strong> Konkem Industries Pvt. Ltd.</p>
+              <ul>
+                <li>
+                  Entered raw material consumption and output data into Finance
+                  & Operations software accurately.
+                </li>
+                <li>
+                  Prepared daily reports on material receiving and shipments
+                  using Excel.
+                </li>
+                <li>
+                  Created weekly charts and graphs using pivot tables with
+                  production and manpower data.
+                </li>
+                <li>
+                  Compiled monthly and annual production performance reports for
+                  internal use.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- This page is hidden when skills is click this page is visible on website -->
+        <div class="hidden" id="skillsPage">
+          <h2>Skills</h2>
+          <div id="skillsData">
+            <div>
+              <h3>Coding skills</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>GSAP</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Microsoft Excel</h3>
+              <ul>
+                <li>XLOOKUP</li>
+                <li>VLOOKUP/HLOOKUP</li>
+                <li>PIVOT TABLES</li>
+                <li>DATA VISUALIZATION WITH PIVOT CHARTS</li>
+                <li>
+                  EXCEL FORMULAS (EXAMPLE.. IF,SUMIF,SUM
+                  IFS,COUNTIF,COUNTIFS,IFERROR)
+                </li>
+                <li>DATA VALIDATION</li>
+                <li>CONDITIONAL FORMATTING</li>
+                <li>FLASH FILL</li>
+                <li>USING SLICERS ON PIVOT TABLE</li>
+                <li>DATA TABLES & FILTERING</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

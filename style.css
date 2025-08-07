@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+#mainPage {
+  height: 100vh;
+  width: 100%;
+  color: rgb(40, 10, 62);
+  background-color: rgb(246, 234, 203);
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 155px;
+  padding-top: 40px;
+}
+
+nav div {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 900;
+  border: 2px solid rgb(62, 63, 41);
+  padding: 12px;
+  border-radius: 25px;
+  transition: font-size 0.5s ease;
+}
+
+nav a:hover {
+  background-color: #ffbd4c86;
+  color: black;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+nav h1 {
+  font-size: 35px;
+  transition: font-size 0.5s ease, border 0.5s ease, border-radius 0.5s ease,
+    padding 0.5s ease, color 0.5s ease;
+}
+
+nav h1:hover {
+  font-size: 40px;
+  border: 2px dotted rgb(62, 63, 41);
+  border-radius: 10px;
+  padding: 8px;
+  color: rgb(7, 71, 153);
+}
+
+#content {
+  width: 100%;
+  height: 90vh;
+}
+
+#homePage {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro {
+  height: 100%;
+  width: 60%;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 125px;
+}
+
+#intro h2 {
+  font-size: 100px;
+  color: rgb(7, 71, 153);
+  line-height: 0.8;
+}
+
+#intro button {
+  margin: 25px 0;
+  height: 40px;
+  width: 115px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 25px;
+  background-color: transparent;
+  transition: height 0.5s ease, width 0.5s ease, font-size 0.5s ease;
+}
+
+#intro button:hover {
+  background-color: #ffbd4c86;
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  height: 45px;
+  width: 130px;
+}
+
+#imgcontainer {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#imgcontainer img {
+  height: 80%;
+  width: 85%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  transition: filter 0.4s ease;
+}
+
+#imgcontainer img:hover {
+  filter: brightness(110%) contrast(120%) saturate(120%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+#aboutPage {
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aboutPage h2 {
+  border-bottom: 2px solid rgb(62, 63, 41);
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+#aboutData {
+  text-align: center;
+  height: auto;
+  width: 90%;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid rgb(62, 63, 41);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+#aboutData span {
+  color: rgb(7, 71, 153);
+  font-weight: 900;
+}
+
+#workPage {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+#workPage h2 {
+  font-size: 30px;
+  padding: 5px 0;
+  border-bottom: 2px solid rgb(62, 63, 41);
+}
+
+#workData {
+  margin-top: 10px;
+  height: auto;
+  width: 95%;
+  border: 2px solid rgb(62, 63, 41);
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 23px;
+  line-height: 1.4;
+}
+
+#Curis {
+  margin: 25px;
+  padding: 35px;
+  border: 2px solid rgb(62, 63, 41);
+  border-radius: 10px;
+}
+
+#k2 {
+  margin: 25px;
+  padding: 35px;
+  border: 2px solid rgb(62, 63, 41);
+  border-radius: 10px;
+}
+
+#workData h3 {
+  border-bottom: 1px solid rgb(62, 63, 41);
+  padding-bottom: 2px;
+}
+
+#skillsPage {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skillsData {
+  height: auto;
+  width: 95%;
+  border: 2px solid rgb(62, 63, 41);
+  margin: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+#skillsPage h2 {
+  font-size: 35px;
+  margin-top: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(62, 63, 41);
+}
+
+#skillsData h3 {
+  font-size: 25px;
+  padding-bottom: 3.5px;
+  border-bottom: 1px solid rgb(62, 63, 41);
+}
+
+#skillsData li {
+  font-size: 18px;
+  padding-top: 8px;
+  margin-left: 25px;
+}
+
+#skillsData div {
+  margin-bottom: 10px;
+}
+
+#contact {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.3;
+  position: absolute;
+  bottom: 90px;
+}
+
+#contact h5 {
+  font-size: 23px;
+  border-bottom: 1px solid rgb(62, 63, 41);
+  margin-bottom: 2px;
+}
+
+#email {
+  transition: font-size 0.5s ease, background-color 0.5s ease,
+    border-radius 0.5s ease;
+}
+
+#email:hover {
+  background-color: #ffbd4c86;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 0 8px;
+}
+
+/* Mobile ke liye responsive */
+
+@media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+  }
+  nav div {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav a {
+    font-size: 13px;
+    border: 1px solid rgb(62, 63, 41);
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  nav a:hover {
+    font-size: 16px;
+  }
+
+  nav h1 {
+    overflow-wrap: break-word;
+    font-size: 25px;
+  }
+
+  nav h1:hover {
+    font-size: 20px;
+  }
+  #homePage {
+    flex-direction: column;
+  }
+  #intro {
+    height: 55%;
+    width: 100%;
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+  }
+  #intro h2 {
+    font-size: 50px;
+    line-height: 0.85;
+  }
+  #intro button {
+    margin: 6.5px 0;
+    height: 30px;
+    width: 105px;
+  }
+  #intro button:hover {
+    font-size: 18px;
+    height: 35px;
+    width: 120px;
+  }
+  #imgcontainer {
+    height: 45%;
+    width: 100%;
+  }
+  #imgcontainer img {
+    height: 90%;
+    width: 75%;
+  }
+  #contact {
+    font-size: 15px;
+    top: 72%;
+  }
+  #contact h5 {
+    font-size: 17px;
+  }
+  #email:hover {
+    font-size: 20px;
+    padding: 2px 12px;
+  }
+  #aboutPage {
+    align-items: center;
+  }
+  #aboutPage h2 {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+  #aboutData {
+    font-size: 15.5px;
+    gap: 5px;
+  }
+  #workPage {
+    margin: 10px 0;
+  }
+  #workPage h2 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  #workData {
+    font-size: 12px;
+    line-height: 1.9;
+    margin: 5px;
+  }
+  #Curis {
+    padding: 25px;
+  }
+
+  #k2 {
+    padding: 25px;
+  }
+  #skillsPage h2 {
+    font-size: 22px;
+    margin-top: 25px;
+    padding-bottom: 5px;
+  }
+  #skillsData h3 {
+    font-size: 18px;
+  }
+  #skillsData li {
+    font-size: 15px;
+  }
+}
+
+/* Tablet ke liye responsive */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    padding-top: 10px;
+    padding: 0 25px;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 2vw;
+  }
+
+  nav a:hover {
+    font-size: 2.3vw;
+  }
+
+  nav h1 {
+    font-size: 4vw;
+  }
+
+  nav h1:hover {
+    font-size: 4.5vw;
+  }
+
+  #intro {
+    height: 100%;
+    width: 55%;
+    font-size: 3vw;
+    padding: 13vw;
+    text-align: center;
+    position: relative;
+  }
+
+  #intro h2 {
+    font-size: 8vw;
+    line-height: 0.85;
+  }
+
+  #intro button {
+    margin: 6.5px 0;
+    height: 30px;
+    width: 105px;
+  }
+  #intro button:hover {
+    font-size: 18px;
+    height: 35px;
+    width: 120px;
+  }
+  #imgcontainer {
+    height: 25vh;
+  }
+  #imgcontainer img {
+    height: 90%;
+    width: 75%;
+  }
+  #contact {
+    font-size: 15px;
+    top: 35vh;
+  }
+  #contact h5 {
+    font-size: 17px;
+  }
+  #email:hover {
+    font-size: 20px;
+    padding: 2px 12px;
+  }
+
+  #aboutData {
+    font-size: 2vh;
+  }
+
+  #workData {
+    font-size: 1.5vh;
+  }
+  #skillsData {
+    font-size: 1.5vh;
+  }
+}
