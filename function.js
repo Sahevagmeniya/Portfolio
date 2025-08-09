@@ -109,7 +109,7 @@ export let getResume = () => {
   let button = document.querySelector("#intro button");
 
   button.addEventListener("click", () => {
-    window.open("/resume/Resume sdmeniya.pdf", "_blank");
+    window.open("/resume/Sahevag meniya Resume of WebDevloper.pdf", "_blank");
   });
 };
 
