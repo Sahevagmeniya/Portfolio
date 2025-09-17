@@ -370,23 +370,16 @@ nav h1:hover {
     gap: 5px;
   }
   #projectPage {
-    margin: 10px 0;
+    font-size: 3vw;
   }
   #projectPage h2 {
-    font-size: 20px;
-    margin: 5px 0;
+    font-size: 4vw;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(62, 63, 41);
   }
-  #workData {
-    font-size: 12px;
-    line-height: 1.9;
-    margin: 5px;
-  }
-  #Curis {
-    padding: 25px;
-  }
-
-  #k2 {
-    padding: 25px;
+  #projectData {
+    height: 100%;
+    width: 100%;
   }
   #skillsPage h2 {
     font-size: 22px;
