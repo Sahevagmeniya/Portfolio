@@ -170,47 +170,43 @@ nav h1:hover {
   font-weight: 900;
 }
 
-#workPage {
+#projectPage {
   height: 100%;
   width: 100%;
   flex-direction: column;
   align-items: center;
-  padding: 10px 0;
+  padding: 20px 20px;
+  font-size: 1.3vw;
 }
-#workPage h2 {
-  font-size: 30px;
-  padding: 5px 0;
+#projectPage h2 {
+  font-size: 2vw;
+  padding: 10px 0;
   border-bottom: 2px solid rgb(62, 63, 41);
 }
 
-#workData {
+#projectPage h3 {
   margin-top: 10px;
-  height: auto;
-  width: 95%;
-  border: 2px solid rgb(62, 63, 41);
-  margin: 20px;
-  border-radius: 10px;
-  font-size: 23px;
-  line-height: 1.4;
 }
 
-#Curis {
-  margin: 25px;
-  padding: 35px;
-  border: 2px solid rgb(62, 63, 41);
-  border-radius: 10px;
+#projectData {
+  margin-top: 20px;
+  width: 75%;
+  padding: 20px 35px;
+  border: 1px solid black;
+  border-radius: 8px;
+  line-height: 150%;
 }
 
-#k2 {
-  margin: 25px;
-  padding: 35px;
-  border: 2px solid rgb(62, 63, 41);
-  border-radius: 10px;
+#projectData a {
+  text-decoration: none;
 }
 
-#workData h3 {
-  border-bottom: 1px solid rgb(62, 63, 41);
-  padding-bottom: 2px;
+#projectData hr {
+  margin-top: 5px;
+}
+
+#projectData div {
+  margin-top: 5px;
 }
 
 #skillsPage {
@@ -373,10 +369,10 @@ nav h1:hover {
     font-size: 15.5px;
     gap: 5px;
   }
-  #workPage {
+  #projectPage {
     margin: 10px 0;
   }
-  #workPage h2 {
+  #projectPage h2 {
     font-size: 20px;
     margin: 5px 0;
   }

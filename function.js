@@ -70,20 +70,35 @@ export let aboutPageAnimation = () => {
   });
 };
 
-export let workPageAnimation = () => {
-  let workTl = gsap.timeline();
+export let projectPageAnimation = () => {
+  let projectTl = gsap.timeline();
 
-  workTl.from("#workPage h2", {
+  projectTl.from("#projectPage h2", {
     y: -50,
     opacity: 0,
-    duration: 0.8,
+    duration: 0.5,
   });
 
-  workTl.from("#workData > div", {
+  projectTl.from("#projectData p", {
     y: -25,
     opacity: 0,
-    duration: 1.5,
-    stagger: 0.3,
+    duration: 0.5,
+  });
+  projectTl.from("#projectData h3", {
+    x: -25,
+    opacity: 0,
+    duration: 0.5,
+  });
+  projectTl.from("#projectData hr", {
+    y: -25,
+    opacity: 0,
+    duration: 0.5,
+  });
+  projectTl.from("#projectData li", {
+    y: -25,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.1,
   });
 };
 
@@ -109,7 +124,7 @@ export let getResume = () => {
   let button = document.querySelector("#intro button");
 
   button.addEventListener("click", () => {
-    window.open("/resume/Sahevag meniya Resume of WebDevloper.pdf", "_blank");
+    window.open("/resume/Sahevag meniya Resume Web Devloper.pdf", "_blank");
   });
 };
 
