@@ -124,7 +124,7 @@ export let getResume = () => {
   let button = document.querySelector("#intro button");
 
   button.addEventListener("click", () => {
-    window.open("/resume/Sahevag meniya Resume Web Devloper.pdf", "_blank");
+    window.open("/resume/Sahevag meniya Resume.pdf", "_blank");
   });
 };
 
