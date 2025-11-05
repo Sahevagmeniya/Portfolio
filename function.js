@@ -73,29 +73,59 @@ export let aboutPageAnimation = () => {
 export let projectPageAnimation = () => {
   let projectTl = gsap.timeline();
 
-  projectTl.from("#projectPage h2", {
+  projectTl.from("#project-1 h2", {
+    y: -50,
+    opacity: 0,
+    duration: 0.5,
+  });
+  projectTl.from("#project-1 h4", {
+    x: -25,
+    opacity: 0,
+    duration: 0.3,
+  });
+  projectTl.from("#project-1 p", {
+    y: -25,
+    opacity: 0,
+    duration: 0.5,
+  });
+  projectTl.from("#project-1 hr", {
+    y: -25,
+    opacity: 0,
+    duration: 0.5,
+  });
+  projectTl.from("#project-1 li", {
+    x: -25,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.1,
+  });
+};
+
+export let project2Animation = () => {
+  let project2Tl = gsap.timeline();
+  project2Tl.from("#project-2 h2", {
     y: -50,
     opacity: 0,
     duration: 0.5,
   });
 
-  projectTl.from("#projectData p", {
+  project2Tl.from("#project-2 p", {
     y: -25,
     opacity: 0,
     duration: 0.5,
   });
-  projectTl.from("#projectData h3", {
+  project2Tl.from("#project-2 h4", {
     x: -25,
     opacity: 0,
     duration: 0.5,
   });
-  projectTl.from("#projectData hr", {
+  project2Tl.from("#project-2 hr", {
     y: -25,
     opacity: 0,
     duration: 0.5,
   });
-  projectTl.from("#projectData li", {
-    y: -25,
+  project2Tl.from("#project-2 li", {
+    x: -25,
     opacity: 0,
     duration: 0.5,
     stagger: 0.1,
@@ -111,12 +141,10 @@ export let skillsPageAnimation = () => {
     duration: 0.8,
   });
 
-  skillsTl.from("#skillsData > div", {
-    scale: 0.5,
+  skillsTl.from(".skill-card", {
     opacity: 0,
-    duration: 1,
-    stagger: 0.3,
-    ease: "back.out(1.7)",
+    duration: 0.8,
+    stagger: 0.2,
   });
 };
 
@@ -124,7 +152,7 @@ export let getResume = () => {
   let button = document.querySelector("#intro button");
 
   button.addEventListener("click", () => {
-    window.open("/resume/Sahevag meniya Resume.pdf", "_blank");
+    window.open("/resume/CV@sdmeniya.pdf", "_blank");
   });
 };
 

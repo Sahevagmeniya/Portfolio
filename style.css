@@ -175,37 +175,87 @@ nav h1:hover {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  padding: 20px 20px;
+  padding: 10px 0;
   font-size: 1.3vw;
 }
-#projectPage h2 {
-  font-size: 2vw;
-  padding: 10px 0;
-  border-bottom: 2px solid rgb(62, 63, 41);
+
+#projectPage {
+  position: relative;
 }
 
-#projectPage h3 {
+#projectButton {
+  position: absolute;
+  right: 5%;
+  top: 6%;
+  padding: 4px 8px;
+  font-size: large;
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+#projectButton:hover {
+  background-color: #ffbd4c58;
+  scale: 1.1;
+}
+
+#project-1 h2 {
+  font-size: 1.5vw;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgb(62, 63, 41);
+}
+
+#project-1 h4 {
   margin-top: 10px;
 }
 
-#projectData {
-  margin-top: 20px;
-  width: 75%;
+#project-1 {
+  margin-top: 30px;
+  width: 80%;
   padding: 20px 35px;
   border: 1px solid black;
   border-radius: 8px;
   line-height: 150%;
 }
 
-#projectData a {
+#project-1 a {
   text-decoration: none;
 }
 
-#projectData hr {
+#project-1 hr {
   margin-top: 5px;
 }
 
-#projectData div {
+#project-1 div {
+  margin-top: 5px;
+}
+#project-2 h2 {
+  font-size: 1.5vw;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgb(62, 63, 41);
+}
+
+#project-2 h4 {
+  margin-top: 10px;
+}
+
+#project-2 {
+  margin-top: 30px;
+  width: 80%;
+  padding: 20px 35px;
+  border: 1px solid black;
+  border-radius: 8px;
+  line-height: 150%;
+}
+
+#project-2 a {
+  text-decoration: none;
+}
+
+#project-2 hr {
+  margin-top: 5px;
+}
+
+#project-2 div {
   margin-top: 5px;
 }
 
@@ -215,37 +265,57 @@ nav h1:hover {
   flex-direction: column;
   align-items: center;
 }
-
-#skillsData {
-  height: auto;
-  width: 95%;
-  border: 2px solid rgb(62, 63, 41);
-  margin: 20px;
-  padding: 10px 30px;
-  border-radius: 10px;
-}
-
 #skillsPage h2 {
-  font-size: 35px;
-  margin-top: 15px;
+  margin-top: 50px;
+  border-bottom: 1px solid black;
   padding-bottom: 5px;
-  border-bottom: 2px solid rgb(62, 63, 41);
 }
 
-#skillsData h3 {
-  font-size: 25px;
-  padding-bottom: 3.5px;
-  border-bottom: 1px solid rgb(62, 63, 41);
+.skills-container {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  width: 80%;
 }
 
-#skillsData li {
-  font-size: 18px;
-  padding-top: 8px;
-  margin-left: 25px;
+.skill-card {
+  border: 1.5px solid #3e3f29;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+  padding: 25px;
+  transition: transform 0.3s ease;
 }
 
-#skillsData div {
-  margin-bottom: 10px;
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card h3 {
+  color: rgb(7, 71, 153);
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffbd4c;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+.skill-card ul {
+  list-style-type: none;
+}
+
+.skill-card li {
+  font-size: 16px;
+  margin: 8px 0;
+  transition: color 0.3s ease;
+}
+
+.skill-card li:hover {
+  color: #074799;
+  font-weight: 600;
 }
 
 #contact {
@@ -371,25 +441,46 @@ nav h1:hover {
   }
   #projectPage {
     font-size: 3vw;
+    padding:15px;
   }
+  #projectButton {
+  top: 92%;
+  right: 6%;
+  font-size: small;
+}
+
+#projectButton:hover {
+  background-color: #ffbd4c58;
+  scale: 1.1;
+}
   #projectPage h2 {
     font-size: 4vw;
     padding: 5px 0;
     border-bottom: 1px solid rgb(62, 63, 41);
   }
-  #projectData {
+  #project-1 {
     height: 100%;
     width: 100%;
   }
+
+  #project-2 {
+  margin-top: 12px;
+  width: 90%;
+}
+
+  #skillsPage {
+    overflow-y: auto;
+  }
+
   #skillsPage h2 {
     font-size: 22px;
     margin-top: 25px;
     padding-bottom: 5px;
   }
-  #skillsData h3 {
+  .skill-card h3 {
     font-size: 18px;
   }
-  #skillsData li {
+  .skill-card li {
     font-size: 15px;
   }
 }

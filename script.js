@@ -14,6 +14,23 @@ let homePage = document.querySelector("#homePage");
 let aboutPage = document.querySelector("#aboutPage");
 let projectPage = document.querySelector("#projectPage");
 let skillsPage = document.querySelector("#skillsPage");
+let projectButton = document.querySelector("#projectButton");
+let project1 = document.querySelector("#project-1");
+let project2 = document.querySelector("#project-2");
+
+projectButton.addEventListener("click", () => {
+  if (project1.classList.contains("block")) {
+    project1.classList.replace("block", "hidden");
+    project2.classList.replace("hidden", "block");
+    projectButton.textContent = "Back";
+    fn.project2Animation();
+  } else {
+    project1.classList.replace("hidden", "block");
+    project2.classList.replace("block", "hidden");
+    projectButton.textContent = "Next";
+    fn.projectPageAnimation();
+  }
+});
 
 about.addEventListener("click", () => {
   aboutPage.classList.replace("hidden", "flex");
